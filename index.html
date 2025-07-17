@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sushi Delight</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🍣 Khushi Bhange</h1>
+    <h1>🍣 Sushi Delight</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Order</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <h2>Fresh & Delicious Sushi</h2>
     <p>Experience the taste of Japan in every bite.</p>
-    <button>Order Now</button>
+    <label for="toggle-menu" class="order-button">Order Now</label>
+  </section>
+
+  <!-- Hidden toggle input for CSS-based dropdown -->
+  <input type="checkbox" id="toggle-menu" hidden />
+
+  <!-- A La Carte Menu shown when 'Order Now' is clicked -->
+  <section class="ala-menu">
+    <h3>A La Carte Menu</h3>
+    <ul>
+      <li>🍣 Salmon Nigiri - $5</li>
+      <li>🍤 Shrimp Tempura Roll - $7</li>
+      <li>🥒 Veggie Maki - $4</li>
+      <li>🐟 Tuna Sashimi - $6</li>
+    </ul>
+  </section>
+
+  <!-- Sushi Menu -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <ul class="menu-list">
+      <li>🍣 Dragon Roll - $10</li>
+      <li>🍱 Sushi Bento Box - $12</li>
+      <li>🥢 California Roll - $8</li>
+      <li>🍵 Miso Soup - $3</li>
+    </ul>
+  </section>
+
+  <!-- Order Summary -->
+  <section id="order">
+    <h2>Your Orders</h2>
+    <ul class="order-list">
+      <li>1x Dragon Roll</li>
+      <li>2x California Roll</li>
+      <li>1x Miso Soup</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91-9876543210</p>
+    <p>📧 Email: contact@sushidelight.com</p>
   </section>
 
   <footer>
@@ -30,5 +72,3 @@
   </footer>
 </body>
 </html>
-
-
